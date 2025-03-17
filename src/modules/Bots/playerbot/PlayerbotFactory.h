@@ -22,7 +22,6 @@ public:
 
 private:
     void Prepare();
-    void InitSecondEquipmentSet();
     void InitEquipment(bool incremental);
     bool CanEquipItem(ItemPrototype const* proto, uint32 desiredQuality);
     bool CanEquipUnseenItem(uint8 slot, uint16 &dest, uint32 item);
@@ -52,12 +51,6 @@ private:
     void CancelAuras();
     bool IsDesiredReplacement(Item* item);
     void InitBags();
-    void InitInventory();
-    void InitInventoryTrade();
-    void InitInventoryEquip();
-    void InitInventorySkill();
-    Item* StoreItem(uint32 itemId, uint32 count);
-    void InitGuild();
     void InitImmersive();
     void InitStats();
     static void AddPrevQuests(uint32 questId, list<uint32>& questIds);
